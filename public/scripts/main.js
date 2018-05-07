@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 function getQuote(){
 	fadeTextOut();
-	$.getJSON('http://allorigins.me/get?url=https%3A//api.forismatic.com/api/1.0/%3Fmethod%3DgetQuote%26format%3Djson%26lang%3Den&callback=?', 
+	$.getJSON('https://allorigins.me/get?url=https%3A//api.forismatic.com/api/1.0/%3Fmethod%3DgetQuote%26format%3Djson%26lang%3Den&callback=?', 
 		function(data){
 			var json = JSON.parse(data.contents);
 			$('#quote').html("<i class='fas fa-quote-left'></i> " +json["quoteText"]);
